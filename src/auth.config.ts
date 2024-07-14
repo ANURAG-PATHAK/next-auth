@@ -1,9 +1,8 @@
-import { useForm } from 'react-hook-form';
 import Credentials from "next-auth/providers/credentials"
 import type { NextAuthConfig } from "next-auth"
 import { LoginSchema } from "@/schemas"
 import credentials from "next-auth/providers/credentials"
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import { getUserByEmail } from '@/data/user';
 
 export default {
